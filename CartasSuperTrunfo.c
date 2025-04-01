@@ -44,6 +44,12 @@ int main() {
     // Solicite ao usuário que insira as informações de cada cidade, como o código, nome, população, área, etc.
     
     // Exibição dos Dados das Cartas:
+    printf("Primeira carta registrada com sucesso\n");
+    printf("Nome: %s\n", nome1);
+    printf("População: %i\n", populacao1);
+    printf("Numero de Pontos Turisticos: %i\n", pontoturistico1);
+    printf("Área: %f\n", area1);
+    printf("PIB: %f\n", pib1);
     // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
     // Exiba os valores inseridos para cada atributo da cidade, um por linha.
 
