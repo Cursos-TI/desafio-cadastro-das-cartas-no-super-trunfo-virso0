@@ -22,6 +22,24 @@ int main() {
 
     printf("Insira o PIB do pais:\n");
     scanf("%f", &pib1);
+
+    getchar();
+    printf("Vamos registrar agora a segunda carta\n");
+    
+    printf("Insira o nome da cidade:\n");
+    fgets(nome2, sizeof(nome2), stdin);
+
+    printf("Insira a população:\n");
+    scanf("%i", &populacao2);
+
+    printf("Insira o Numero de Pontos Turisticos:\n");
+    scanf("%i", &pontoturistico2);
+
+    printf("Insira a area do pais:\n");
+    scanf("%f", &area2);
+
+    printf("Insira o PIB do pais:\n");
+    scanf("%f", &pib2);
     // Sugestão: Utilize a função scanf para capturar as entradas do usuário para cada atributo.
     // Solicite ao usuário que insira as informações de cada cidade, como o código, nome, população, área, etc.
     
