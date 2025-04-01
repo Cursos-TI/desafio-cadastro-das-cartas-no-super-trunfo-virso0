@@ -23,7 +23,7 @@ int main() {
     printf("Insira o PIB do pais:\n");
     scanf("%f", &pib1);
 
-    getchar();
+    getchar(); // serve para não atrapalhar no input do nome devido ficar resquicio do \n anterior
     printf("Vamos registrar agora a segunda carta\n");
     
     printf("Insira o nome da cidade:\n");
