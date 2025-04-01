@@ -8,7 +8,20 @@ int main() {
     // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
     
     // Cadastro das Cartas:
+    printf("\nInsira o nome da cidade:\n");
+    fgets(nome1, sizeof(nome1), stdin);
 
+    printf("Insira a População:\n");
+    scanf("%i", &populacao1);
+
+    printf("Insira o Numero de Pontos Turisticos:\n");
+    scanf("%i", &pontoturistico1);
+
+    printf("Insira a area do pais:\n");
+    scanf("%f", &area1);
+
+    printf("Insira o PIB do pais:\n");
+    scanf("%f", &pib1);
     // Sugestão: Utilize a função scanf para capturar as entradas do usuário para cada atributo.
     // Solicite ao usuário que insira as informações de cada cidade, como o código, nome, população, área, etc.
     
