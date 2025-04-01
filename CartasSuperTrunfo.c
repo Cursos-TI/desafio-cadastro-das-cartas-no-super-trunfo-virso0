@@ -1,14 +1,19 @@
 #include <stdio.h>
 
 int main() {
-    // Sugestão: Defina variáveis separadas para cada atributo da cidade.
+    // primeiro a definição das variaveis, criando o duplo para armazenar para as duas cartas
     int populacao2, populacao1, pontoturistico2, pontoturistico1;
     float area2, area1, pib2, pib1;
-    char nome2[50], nome1[50];
-    // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
+    char nome2[50], nome1[50], nomeestado1[50], nomeestado2[50], codigo1[50], codigo2[50];
+//as perguntas com printf e em seguida a leitura com scanf pegando o tratamento da reposta e vinculando a variavel correta, processo repetido com todas as variaveis
     
-    // Cadastro das Cartas:
-    printf("\nInsira o nome da cidade:\n");
+    printf("\nInsira o nome do estado:\n");
+    fgets(nomeestado1, sizeof(nomeestado1), stdin);
+
+    printf("Insira o codigo da carta:\n");
+    fgets(codigo1, sizeof(codigo1), stdin);
+
+    printf("Insira o nome da cidade:\n");
     fgets(nome1, sizeof(nome1), stdin);
 
     printf("Insira a População:\n");
@@ -17,15 +22,23 @@ int main() {
     printf("Insira o Numero de Pontos Turisticos:\n");
     scanf("%i", &pontoturistico1);
 
-    printf("Insira a area do pais:\n");
+    printf("Insira a área em km:\n");
     scanf("%f", &area1);
 
-    printf("Insira o PIB do pais:\n");
+    printf("Insira o PIB:\n");
     scanf("%f", &pib1);
-
-    getchar(); // serve para não atrapalhar no input do nome devido ficar resquicio do \n anterior
-    printf("Vamos registrar agora a segunda carta\n");
+//print demonstrando como a primeira carta ficou. 
+//esse getchar serve para não pular o proximo input pelo resquicio do \n anterior
+    getchar();
+    printf("Vamos regristrar agora a segunda carta\n");
     
+    printf("\nInsira o nome do estado:\n");
+    fgets(nomeestado2, sizeof(nomeestado2), stdin);
+
+    printf("Insira o codigo da carta:\n");
+    fgets(codigo2, sizeof(codigo2), stdin);
+
+
     printf("Insira o nome da cidade:\n");
     fgets(nome2, sizeof(nome2), stdin);
 
@@ -35,30 +48,32 @@ int main() {
     printf("Insira o Numero de Pontos Turisticos:\n");
     scanf("%i", &pontoturistico2);
 
-    printf("Insira a area do pais:\n");
+    printf("Insira a área em km:\n");
     scanf("%f", &area2);
 
-    printf("Insira o PIB do pais:\n");
+    printf("Insira o PIB:\n");
     scanf("%f", &pib2);
-    // Sugestão: Utilize a função scanf para capturar as entradas do usuário para cada atributo.
-    // Solicite ao usuário que insira as informações de cada cidade, como o código, nome, população, área, etc.
     
-    // Exibição dos Dados das Cartas:
     printf("Primeira carta registrada com sucesso\n");
-    printf("Nome: %s\n", nome1);
+    printf("Estado: %s\n", nomeestado1);
+    printf("Código: %s\n", codigo1);
+    printf("Cidade:%s\n", nome1);
     printf("População: %i\n", populacao1);
     printf("Numero de Pontos Turisticos: %i\n", pontoturistico1);
     printf("Área: %f\n", area1);
     printf("PIB: %f\n", pib1);
 
+//repetindo o mesmo processo porém agora com para a segunda carta
+
+//print da segunda carta assim como a da primeira. 
     printf("\nSegunda carta registrada com sucesso\n");
-    printf("Nome: %s\n", nome2);
+    printf("Estado: %s\n", nomeestado2);
+    printf("Código: %s\n", codigo2);
+    printf("Cidade:%s\n", nome2);
     printf("População: %i\n", populacao2);
     printf("Numero de Pontos Turisticos: %i\n", pontoturistico2);
     printf("Área: %f\n", area2);
     printf("PIB: %f\n", pib2);
-    // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
-    // Exiba os valores inseridos para cada atributo da cidade, um por linha.
-
+    
     return 0;
 }
