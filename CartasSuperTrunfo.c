@@ -51,7 +51,7 @@ int main() {
     printf("Área: %f\n", area1);
     printf("PIB: %f\n", pib1);
 
-    printf("Segunda carta registrada com sucesso\n");
+    printf("\nSegunda carta registrada com sucesso\n");
     printf("Nome: %s\n", nome2);
     printf("População: %i\n", populacao2);
     printf("Numero de Pontos Turisticos: %i\n", pontoturistico2);
