@@ -3,7 +3,7 @@
 int main() {
     // primeiro a definição das variaveis, criando o duplo para armazenar para as duas cartas
     int populacao2, populacao1, pontoturistico2, pontoturistico1;
-    float area2, area1, pib2, pib1, densidadepopulacional1, densidadepopulacional2;
+    float area2, area1, pib2, pib1, densidadepopulacional1, densidadepopulacional2, pibpercapita1, pibpercapita2;
     char nome2[50], nome1[50], nomeestado1[50], nomeestado2[50], codigo1[50], codigo2[50];
 //as perguntas com printf e em seguida a leitura com scanf pegando o tratamento da reposta e vinculando a variavel correta, processo repetido com todas as variaveis
     
