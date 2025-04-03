@@ -53,6 +53,9 @@ int main() {
 
     printf("Insira o PIB:\n");
     scanf("%f", &pib2);
+
+    densidadepopulacional1 = (float)populacao1 / area1;
+    densidadepopulacional2 = (float)populacao2 / area2;
     
     printf("Primeira carta registrada com sucesso\n");
     printf("Estado: %s\n", nomeestado1);
