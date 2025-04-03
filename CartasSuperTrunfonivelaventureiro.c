@@ -65,7 +65,7 @@ int main() {
     printf("Área: %2.f\n", area1);
     printf("PIB: %2.f\n", pib1);
     printf("Numero de Pontos Turisticos: %i\n", pontoturistico1);
-    printf("Densidade Populacional:%f", populacao1 / area1);
+    printf("Densidade Populacional: %.2f hab/km²\n", densidadepopulacional1);
 
 //repetindo o mesmo processo porém agora com para a segunda carta
 
@@ -78,6 +78,7 @@ int main() {
     printf("Área: %2.f\n", area2);
     printf("PIB: %2.f\n", pib2);
     printf("Numero de Pontos Turisticos: %i\n", pontoturistico2);
+    printf("Densidade Populacional: %.2f hab/km²\n", densidadepopulacional2);
     
     return 0;
 }
