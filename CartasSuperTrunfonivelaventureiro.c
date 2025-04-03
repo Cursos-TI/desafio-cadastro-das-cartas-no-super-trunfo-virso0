@@ -57,6 +57,9 @@ int main() {
     densidadepopulacional1 = (float)populacao1 / area1;
     densidadepopulacional2 = (float)populacao2 / area2;
     
+    pibpercapita1 = pib1 / populacao1;
+    pibpercapita2 = pib2 / populacao2;
+
     printf("Primeira carta registrada com sucesso\n");
     printf("Estado: %s\n", nomeestado1);
     printf("Código: %s\n", codigo1);
