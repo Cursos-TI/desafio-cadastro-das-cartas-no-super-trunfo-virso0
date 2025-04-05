@@ -28,8 +28,7 @@ int main() {
 
     printf("Insira o PIB:\n");
     scanf("%f", &pib1);
-//print demonstrando como a primeira carta ficou. 
-//esse getchar serve para não pular o proximo input pelo resquicio do \n anterior
+
     getchar();
     printf("Vamos regristrar agora a segunda carta\n");
     
@@ -75,9 +74,6 @@ int main() {
     superpoder1 = populacao1 + area1 + pib1 + pontoturistico1 + pibpercapita1 + (1/densidadepopulacional1);
     printf("Superpoder: %.2f\n", superpoder1);
 
-//repetindo o mesmo processo porém agora com para a segunda carta
-
-//print da segunda carta assim como a da primeira. 
     printf("\nSegunda carta registrada com sucesso\n");
     printf("Estado: %s\n", nomeestado2);
     printf("Código: %s\n", codigo2);
@@ -91,6 +87,15 @@ int main() {
 
     superpoder2 = populacao2 + area2 + pib2 + pontoturistico2 + pibpercapita2 + (1/densidadepopulacional2);
     printf("Superpoder: %.2f\n", superpoder2);
+
+    printf("Comparação de Cartas:\n");
+    printf("População:%d\n", populacao1>populacao2);
+    printf("Área:%d\n", area1>area2);
+    printf("PIB:%d\n", pib1>pib2);
+    printf("Pontos Turisticos:%d\n", pontoturistico1>pontoturistico2);
+    printf("Densidade Populacional:%d\n", densidadepopulacional1<densidadepopulacional2);
+    printf("PIB per Capita:%d\n", pibpercapita1>pibpercapita2);
+    printf("Superpoder:%d\n", superpoder1>superpoder2);
 
     return 0;
 }
