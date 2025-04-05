@@ -4,7 +4,7 @@ int main() {
     // primeiro a definição das variaveis, criando o duplo para armazenar para as duas cartas
     int pontoturistico2, pontoturistico1;
     unsigned int populacao2, populacao1;
-    float area2, area1, pib2, pib1, densidadepopulacional1, densidadepopulacional2, pibpercapita1, pibpercapita2;
+    float area2, area1, pib2, pib1, densidadepopulacional1, densidadepopulacional2, pibpercapita1, pibpercapita2, superpoder1, superpoder2;
     char nome2[50], nome1[50], nomeestado1[50], nomeestado2[50], codigo1[50], codigo2[50];
 //as perguntas com printf e em seguida a leitura com scanf pegando o tratamento da reposta e vinculando a variavel correta, processo repetido com todas as variaveis
     
@@ -71,6 +71,9 @@ int main() {
     printf("Numero de Pontos Turisticos: %i\n", pontoturistico1);
     printf("Densidade Populacional: %.2f hab/km²\n", densidadepopulacional1);
     printf("PIB per Capital:%.3f\n", pibpercapita1);
+
+    superpoder1 = populacao1 + area1 + pib1 + pontoturistico1 + pibpercapita1 + (1/densidadepopulacional1);
+    printf("Superpoder: %.2f\n", superpoder1);
 
 //repetindo o mesmo processo porém agora com para a segunda carta
 
