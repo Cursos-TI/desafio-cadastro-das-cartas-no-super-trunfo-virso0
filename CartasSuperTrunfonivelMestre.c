@@ -89,5 +89,8 @@ int main() {
     printf("Densidade Populacional: %.2f hab/km²\n", densidadepopulacional2);
     printf("PIB per Capital:%.3f\n", pibpercapita2);
 
+    superpoder2 = populacao2 + area2 + pib2 + pontoturistico2 + pibpercapita2 + (1/densidadepopulacional2);
+    printf("Superpoder: %.2f\n", superpoder2);
+
     return 0;
 }
