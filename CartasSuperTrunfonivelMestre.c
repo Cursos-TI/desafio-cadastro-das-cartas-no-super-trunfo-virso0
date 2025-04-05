@@ -88,7 +88,7 @@ int main() {
     superpoder2 = populacao2 + area2 + pib2 + pontoturistico2 + pibpercapita2 + (1/densidadepopulacional2);
     printf("Superpoder: %.2f\n", superpoder2);
 
-    printf("Comparação de Cartas:\n");
+    printf("\nComparação de Cartas:\n");
     printf("População:%d\n", populacao1>populacao2);
     printf("Área:%d\n", area1>area2);
     printf("PIB:%d\n", pib1>pib2);
